@@ -1,0 +1,66 @@
+---
+title: "Correo-reporte"
+author: "Luis Palacios Sánchez (TF-II)"
+date: "`r paste(format(Sys.time(), '%Y-%m-%d %H:%M:%S'), Sys.timezone()) `"
+output:
+  html_document: default
+  pdf_document: default
+lang: es
+---
+------
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+# Reporte de emisión documentaria DFAI
+
+El presente reporte busca realizar un adecuado seguimiento a los principales actos administrativos emitidos, además de identificar las posibles brechas y generar alertas. El reporte comprende información obtenida del sistema INAF al día 26/03/2025.
+
+## Carga procesal 
+Al cierre del presente reporte se observa un incremento sustancial en el ingreso de informes de supervisión especialmente en lo que respecta al subsector hidrocarburos y residuos sólidos. En el caso de los demás sectores, la tendencia ha resultado relativamente estable en el periodo evaluado. 
+
+
+```{r load-image, echo = FALSE, out.width = '80%'}
+# plot(G_1)
+# knitr::include_graphics("3) OUTPUT/2) GRAFICOS/G_1.png") 
+knitr::include_graphics(paste0("C:/Users/",Sys.info()[6],"/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/3) GRAFICOS/G_1.jpg"))
+
+```
+
+\newpage
+
+## Emisión de actos
+
+Como puede observarse en el siguiente cuadro, Para los casos con fecha de prescripción establecida hasta el 31/12/2015, el subsector hidrocarburos presenta la mayor cantidad de expedientes y resoluciones directorales emitidas, seguido de minería e industria.
+
+```{r include-table_1, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+
+# cat(readLines("C:/Users/lfpal/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2)TABLAS/my_table.html"), sep = "\n")
+htmltools::includeHTML(paste0("C:/Users/",Sys.info()[6],"/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2) TABLAS/TAB_2.1.html"))
+
+```
+
+\newpage
+
+## Brechas
+
+Finalmente como puede observarse en ta tabla contigua, a nivel actos administrativos pendientes de emisión se tiene el siguiente detalle:
+
+* RSD: Hidrocarburos y minería son los subsectores con mayor cantidad de pendiente, representando el 12.1% y 19.7 % del total de sus expedientes, sin embargo, consultoras ambientales presenta el mayor ratio de todos.
+* IFI: Hidrocarburos e industria presentan la mayor cantida de IFI pendientes, representando el 3% y 6.6% de los expedientes, sin embargo agricultura presenta el mayor ratio con el 15.6%.
+* RD: Hidrocarburos presenta la mayor cantidad de expedientes con RD pendientes con 59 expedientes, representando el 3.2% de los expedientes, sin embargo, agricultura presenta el mayor ratio con el 4.7%.
+
+```{r include-table_2, echo=FALSE, message=FALSE, warning=FALSE}
+
+htmltools::includeHTML(paste0("C:/Users/",Sys.info()[6],"/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2) TABLAS/TAB_2.2.html"))
+
+```
+
+Finalmente, se recomienda evaluar los datos brindado con prudencia en la medida que este reporte se encuentra en periodo de prueba a la espera de sus comentarios, observaciones o sugerencias.
+
+---------------
+Saludos

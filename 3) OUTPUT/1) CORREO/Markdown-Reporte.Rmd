@@ -1,0 +1,94 @@
+---
+title: "Reporte: Estado PAS"
+# author: "Luis Palacios Sánchez (TF-II)"
+date: "Información actualizada a `r paste(format(Sys.time(), '%Y-%m-%d %H:%M:%S'), Sys.timezone()) `"
+output:
+  html_document: default
+  pdf_document: default
+lang: es
+---
+------
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+# Reporte de emisión documentaria DFAI
+
+El presente documento muestra el estado de los Procedimientos Administrativos Sancionadores (PAS) pendientes de resolución, según sus fechas de prescripción, en tres (03) espacios temporales próximos: un (01]) mes, tres (03) meses y fin del año calendario.
+
+
+
+## I.	Fecha de prescripción igual o menor a un (01) mes 
+En el siguiente cuadro, por cada subsector, se muestra la cantidad de PAS pendientes de resolución con fecha de prescripción igual o menor a un (01) mes, y su distribución según la etapa en el procedimiento:
+
+
+```{r include-table_1M, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+
+# cat(readLines("C:/Users/lfpal/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2)TABLAS/my_table.html"), sep = "\n")
+htmltools::includeHTML(paste0("C:/Users/",Sys.info()[6],"/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2) TABLAS/TAB_M1.2.html"))
+
+```
+
+\newpage
+
+## II.	Fecha de prescripción igual o menor a tres (03) meses
+
+En el siguiente cuadro, por cada subsector, se muestra la cantidad de PAS pendientes de resolución con fecha de prescripción igual o menor a tres (03) meses, y su distribución según la etapa en el procedimiento:
+
+```{r include-table_3M, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+
+# cat(readLines("C:/Users/lfpal/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2)TABLAS/my_table.html"), sep = "\n")
+htmltools::includeHTML(paste0("C:/Users/",Sys.info()[6],"/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2) TABLAS/TAB_M3.2.html"))
+
+```
+
+\newpage
+
+## III.	Fecha de prescripción en el año calendario
+
+En el siguiente cuadro, por cada subsector, se muestra la cantidad de PAS pendientes de resolución con fecha de prescripción en el presente año calendario, y su distribución según la etapa en el procedimiento:
+
+```{r include-table_2, echo=FALSE, message=FALSE, warning=FALSE}
+
+htmltools::includeHTML(paste0("C:/Users/",Sys.info()[6],"/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/2) TABLAS/TAB_M12.2.html"))
+
+```
+
+\newpage
+
+## IV.	Ingresos de informes de supervisión 
+
+Los siguientes gráficos muestran, por cada subsector, el ingreso de informes de supervisión desde enero de 2022 con una periodicidad mensual, y una línea de tendencia que caracteriza su evolución.
+
+
+```{r load-image, echo = FALSE, out.width = '80%'}
+# plot(G_1)
+# knitr::include_graphics("3) OUTPUT/2) GRAFICOS/G_1.png") 
+knitr::include_graphics(paste0("C:/Users/",Sys.info()[6],"/OneDrive/1) TRABAJO/2) OEFA/1) DFAI/1) PROYECTO BD/3) OUTPUT/3) GRAFICOS/G_1.jpg"))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+Finalmente, se recomienda evaluar los datos brindado con prudencia en la medida que este reporte se encuentra en periodo de prueba a la espera de sus comentarios, observaciones o sugerencias.
+
+Link del repositorio de datos: "https://docs.google.com/spreadsheets/d/1SYGEtKL2LtN_QeN4WkErb1kO5icRWcTUnexDvH0Hx-M/edit?usp=sharing"
+
+---------------
+Saludos Cordiales
+
+-
+Ing. Econ. Luis F. Palacios Sánchez
